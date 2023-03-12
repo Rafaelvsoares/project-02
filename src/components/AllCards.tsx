@@ -44,7 +44,7 @@ function AllCards(){
           {cards.data.slice(0, 100).map((card: any) => {
             return <Card
             key={card.name}
-            id = {card}
+            id = {card.id}
             name = {card.name}
             image = {card.card_images[0].image_url}
             type = {card.type}

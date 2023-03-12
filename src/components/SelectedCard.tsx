@@ -26,40 +26,6 @@ function SelectedCard(){
           <img src={card.data[0].card_images[0].image_url} alt={card.data[0].name} />
         </figure>
       </div>
-      <div className="info">
-        <div>
-          <p className="card-name">{card.data[0].name}</p>
-          <hr className="solid" />
-          <table>
-            <tr>
-              <td>Type</td>
-              <td className="split-right">{card.data[0].type}</td>
-            </tr>
-            <tr>
-              <td>Race</td>
-              <td className="split-right">{card.data[0].race}</td>
-            </tr>
-            <tr>
-              <td>Archetype</td>
-              <td className="split-right">{card.data[0].archetype}</td>
-            </tr>
-            <tr>
-              <td>Rarity</td>
-              <td className="split-right">{card.data[0].card_sets[0].set_rarity}</td>
-            </tr>
-            <tr>
-              <td>Description</td>
-              <td className="split-right">{card.data[0].desc}</td>
-            </tr>
-          </table>
-          <hr className="solid" />
-        </div>
-        <div>
-          <p><strong>Price: £</strong>{card.data[0].card_sets[0].set_price}</p>
-          <input className="quantity" type="number" />
-          <button>Add to Basket</button>
-        </div>
-      </div>
     </div>
   </>
   )
