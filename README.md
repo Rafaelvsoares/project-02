@@ -43,7 +43,7 @@ The timeframe allocated for completing my MVP for this project was one week, and
 
 Before delving into the technical details, I find it helpful to have a clear idea of the overall design of the project. To achieve this, I typically start with a visual mockup using tools like Figma or Sketch, but in this case I used Excalidraw.
 
-![Excalidraw](/src/assets/project-2.png)
+[ ![Excalidraw](/src/assets/project-2.png) ](/src/assets/project-2.png)
 
 While working on the application layout, I opted to prioritise its features by utilising a colour-coded system. Specifically, I used green to indicate the most essential features for the minimum viable product, and reserved orange and red to signify features that should only be addressed once all the green features are completed, or as potential future additions.
 
