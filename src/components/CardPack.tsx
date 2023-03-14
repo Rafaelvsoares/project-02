@@ -1,24 +1,25 @@
+import { Container } from "@chakra-ui/react";
 import React from "react";
+import ShowCards from "./ShowCards";
 
-function CardPack({name, image, rarity}: any){
+function CardPack(props: any){
+  const [open, setOpen] = React.useState(false)
 
-  return (
+  return (props.trigger) ? (
     <>
-    <div className="card-pack">
-      <div className="card-pack">
-        <p>Name:{name}</p>
-        <p>Rarity:{rarity}</p>
-        <img src={image} alt={name} />
-        <div className="card-single">
-          <p>Name:{name}</p>
-          <img src={image} alt={name} />
+      <div className="pack-popup-inner">
+        <div className="test2">
+          <div className="test">
+            <div className="card-pack-one">
+            </div>
+          </div>
         </div>
+        <button className="close-popup-btn" onClick={() => props.setTrigger(false)}>X</button>
+        <ShowCards />
       </div>
-    </div>
       
-
   </>
-  )
+  ) : <></>
 }
 
 export default CardPack

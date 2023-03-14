@@ -20,23 +20,11 @@ function SelectedCard(){
   }
   
   return( <>
-    <div className="container">
-      <div>
-        <img src={card.data[0].card_images[0].image_url} alt={card.data[0].name} />
-      </div>
-      <div className="info">
-        <p><strong>Name:</strong> {card.data[0].name}</p>
-        <p><strong>Type:</strong> {card.data[0].type}</p>
-        <p><strong>Race:</strong> {card.data[0].race}</p>
-        <p><strong>Archetype:</strong> {card.data[0].archetype}</p>
-        <p><strong>Rarity:</strong> {card.data[0].card_sets[0].set_rarity}</p>
-        <p><strong>Description:</strong> {card.data[0].desc}</p>
-
-      </div>
-      <div className="info">
-        <p><strong>Price: £</strong>{card.data[0].card_sets[0].set_price}</p>
-        <input className="quantity" type="number" />
-        <button>Add to Basket</button>
+    <div className="custom-container">
+      <div className="card-image">
+        <figure className="image is-2by2">
+          <img src={card.data[0].card_images[0].image_url} alt={card.data[0].name} />
+        </figure>
       </div>
     </div>
   </>

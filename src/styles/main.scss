@@ -1,0 +1,277 @@
+@import "../../node_modules/bulma/bulma.sass";
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section.section {
+  min-height: calc(100vh - 11.25rem);
+}
+
+.navbar{
+  max-height: none !important;
+}
+
+.nav-search-btn{
+  background: grey url(/src/assets/search-icon.png) no-repeat center 2px;
+  background-size: 20px;
+  border-radius: 0 8px 8px 0;
+  width: 32px;
+  height: 28px;
+  text-indent: -99999px;
+  border-color: black;
+  border-width: 2px 2px 2px 0;
+  cursor: pointer;
+}
+
+.nav-search-btn:active{
+  background-color: rgb(163, 163, 163);
+}
+
+.nav-search-bar{
+  height: 28px;
+  padding: 0px 0px 0px 8px;
+  border-width: 2px;
+  border-radius: 8px 0 0 8px;
+  border-color: black;
+  outline: none;
+}
+
+.custom-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+
+div.info{
+  margin: 0 0 0 100px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+p.card-name{
+  font-size: 42px;
+  text-align: center;
+}
+
+hr.solid{
+  margin: 0 0 15px 0;
+}
+
+td{
+  font-size: 18px;
+  padding: 8px 0;
+  font-weight: bold;
+}
+
+td.split-right{
+  float: right;
+  font-size: 18px;
+  color: grey;
+  font-weight:normal;
+}
+
+@media screen and (max-width: 1023px) {
+
+  div.navbar-start{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-menu.is-active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form.navbar-item{
+    order: -1;
+    padding: 4px 0 4px 8px;
+  }
+
+}
+
+@media screen and (max-width: 1173px){
+  div.info{
+    margin: 10px 0 0 0;
+    border: 1px solid black;
+  }
+  .custom-container{
+    padding: 40px 10px 0 10px;
+  }
+}
+
+// .nav{
+//   display: flex;
+//   background-color: #363636;
+//   justify-content: space-between;
+
+// }
+// .nav-links{
+//   display: flex;
+//   align-items: center;
+
+// }
+
+// .link{
+//   color: white;
+//   text-decoration: none;
+//   padding: 0px 10px;
+// }
+
+// .filter-checkbox{
+//   background-color: grey;
+//   display: flex;
+//   justify-content: space-around;
+// } Allcards
+
+// .container{
+//   height: 100%;
+//   display: flex;
+//   /* background-color: red; */
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: center;
+
+// }
+
+/* AllCards */
+
+/* Card */
+
+/* .info{
+  flex: 1;
+}
+
+.card-pack{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:beige;
+  cursor: pointer;
+  padding: 0px 10px;
+  margin: 10px;
+}
+
+.card-single{
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background: rgba(8,3,38,0.9);
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+
+}
+
+/* .card-single::before{
+  content: "";
+  position: absolute;
+  background-color: red;
+  left: 50%;
+  top: 100%;
+  transform: translateX(150%);
+} */
+
+/* .card-pack:hover .card-single{
+  bottom: 10%;
+  visibility: visible;
+}
+
+.card-size{
+  background-repeat: contain;
+  max-width: 200px;
+  max-height: 291.67px;
+}
+
+p.card-description{
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+} */
+
+/* Card */
+
+// .card-wrapper{
+//   display: flex;
+//   flex-direction: column;
+//   background-color: bisque;
+//   padding: 0px 5px;
+//   margin: 5px 5px;
+//   align-items: center;
+// }
+
+// .card-pack-container{
+//   display: flex;
+//   flex-direction: column;
+//   background-color: red;
+//   align-items: center;
+// }
+
+// .card-pack-one{
+//   display: inline-flex;
+//   justify-content: center;
+//   background-color:beige;
+//   cursor: pointer;
+//   width: 150px;
+//   height: 200px;
+//   padding: 0px 10px;
+//   margin: 5px 5px;
+// }
+
+// .test{
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .test2{
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .test2 button{
+//   max-width: 50px;
+// }
+
+// .card-pack-one button{
+//   max-width: 200px;
+//   max-height: 20px;
+
+// }
+// .card-pack-popup{
+//   display: flex;
+//   flex-direction: row;
+//   width: 800px;
+//   height: 500px;
+//   background-color: red;
+
+// }
+
+// .pack-popup{
+//   display: flex;
+//   flex-direction: row;
+//   background-color: red;
+//   align-items: center;
+//   justify-content: center;
+
+// }
+// .pack-popup-inner{
+//   position: relative;
+//   width: 100%;
+
+// }
+
+// .pack-popup-inner .close-popup-btn{
+//   position: absolute;
+//   top: 16px;
+//   right: 16px;
+// }
+

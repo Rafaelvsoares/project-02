@@ -10,8 +10,8 @@ import ShoppingBasket from './components/ShoppingBasket'
 
 function App() {
 
-  return ( <>
-    <Router>
+  return <Router>
+    <main>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}/>
@@ -20,9 +20,8 @@ function App() {
         <Route path="/all-cards/:id" element={<SelectedCard />}/>
         <Route path="/shopping-basket" element={<ShoppingBasket/>}/>
       </Routes>
-    </Router>
-  </>
-  )
+    </main>
+  </Router>
 }
 
 export default App

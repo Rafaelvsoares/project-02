@@ -15,25 +15,15 @@ interface CardProps {
 
 function Card({name, image, id, type, race, archetype, rarity, description}: CardProps){
   return (
-    <>
-      <div className="card-pack">
-        <p>{name}</p>
-        <Link to={`/all-cards/${id}`}>
-          <img src={image} alt={name} width="200px"/>
-        </Link>
-        <div className="card-single">
-          <img className="card-size"src={image} alt={name} />
-          <div className="info">
-            <p>{name}</p>
-            <p>{type}</p>
-            <p>{race}</p>
-            <p>{archetype}</p>
-            <p>{rarity}</p>
-            <p>{description}</p>
+        <div className="column is-3">
+          <div className="card-image">
+            <figure className="image is-2by2">
+              <Link to={`/all-cards/${id}`}>
+                <img src={image} />
+              </Link>
+            </figure>
           </div>
         </div>
-      </div>
-    </>
   )
 }
 

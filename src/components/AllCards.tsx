@@ -39,21 +39,22 @@ function AllCards(){
 
   return(
     <section className="section">
-      <p>Search: <input type="text"/></p>
-      <div className="container">
-        {cards.data.slice(0, 100).map((card: any) => {
-          return <Card
-          key={card.name}
-          id = {card.id}
-          name = {card.name}
-          image = {card.card_images[0].image_url}
-          type = {card.type}
-          race = {card.race}
-          archetype = {card.archetype}
-          rarity = {""}
-          description = {card.desc}
-        />
-        })}
+      <div className="container is-fluid">
+        <div className="columns is-multiline">
+          {cards.data.slice(0, 100).map((card: any) => {
+            return <Card
+            key={card.name}
+            id = {card.id}
+            name = {card.name}
+            image = {card.card_images[0].image_url}
+            type = {card.type}
+            race = {card.race}
+            archetype = {card.archetype}
+            rarity = {""}
+            description = {card.desc}
+          />
+          })}
+        </div>
       </div>
     </section>
   )
