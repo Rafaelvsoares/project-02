@@ -1,6 +1,6 @@
 import React, { SyntheticEvent } from 'react';
 import { Link } from 'react-router-dom';
-import basket from '../assets/basket,png';
+import basket from '../assets/basket.png';
 import logo from '../assets/yugioh-logo.png';
 
 function Navbar(){
@@ -45,7 +45,7 @@ function Navbar(){
               Your Cards
             </Link>
             <Link to="/your-cards" className="navbar-item">
-              Abouttt
+              About
             </Link>
               <form action="get/replace/later" className="navbar-item">
                 <fieldset>
