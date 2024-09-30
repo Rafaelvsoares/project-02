@@ -146,4 +146,4 @@ When adding an item to my inventory, the card is mistakenly added to the wrong c
 
 - npm i net netlify-cli -g
 - on console -> netlify login
-- netlify deploy -> enter partial name of project -> type dist -> if everything shows up ok on website -> netlify deploy --prod -> type dist
+- do -> npm run build to create dist folder -> netlify deploy -> enter partial name of project if first time trying to do this -> type dist -> if everything shows up ok on website -> netlify deploy --prod -> type dist
