@@ -39,7 +39,7 @@ function Navbar(){
         <div className="navbar-menu">
           <div className="navbar-start">
             <Link to="/all-cards" className="navbar-item">
-              All Cards
+              All Cardssss
             </Link>
             <Link to="/your-cards" className="navbar-item">
               Your Cards
